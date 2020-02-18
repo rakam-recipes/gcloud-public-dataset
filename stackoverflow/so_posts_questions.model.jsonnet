@@ -1,12 +1,11 @@
 {
   name: 'so_posts_questions',
-  category: "Stackoverflow",
+  category: 'Stackoverflow',
   hidden: false,
   target: std.mergePatch(std.extVar('schema'), { table: 'posts_questions' }),
   mappings: {},
   dimensions: {
     title: {
-      pivot: false,
       type: 'string',
       column: 'title',
       reportOptions: {
@@ -15,7 +14,6 @@
       hidden: false,
     },
     body: {
-      pivot: false,
       type: 'string',
       column: 'body',
       reportOptions: {
@@ -24,7 +22,6 @@
       hidden: false,
     },
     community_owned_date: {
-      pivot: false,
       timeframes: [
         'hour',
         'day',
@@ -46,7 +43,6 @@
       hidden: false,
     },
     creation_date: {
-      pivot: false,
       timeframes: [
         'hour',
         'day',
@@ -68,7 +64,6 @@
       hidden: false,
     },
     last_activity_date: {
-      pivot: false,
       timeframes: [
         'hour',
         'day',
@@ -90,7 +85,6 @@
       hidden: false,
     },
     last_edit_date: {
-      pivot: false,
       timeframes: [
         'hour',
         'day',
@@ -112,7 +106,6 @@
       hidden: false,
     },
     last_editor_display_name: {
-      pivot: false,
       type: 'string',
       column: 'last_editor_display_name',
       reportOptions: {
@@ -121,7 +114,6 @@
       hidden: false,
     },
     owner_display_name: {
-      pivot: false,
       type: 'string',
       column: 'owner_display_name',
       reportOptions: {
@@ -130,7 +122,6 @@
       hidden: false,
     },
     parent_id: {
-      pivot: false,
       type: 'string',
       column: 'parent_id',
       reportOptions: {
@@ -139,7 +130,6 @@
       hidden: false,
     },
     tags: {
-      pivot: false,
       type: 'string',
       column: 'tags',
       reportOptions: {
@@ -148,7 +138,6 @@
       hidden: false,
     },
     accepted_answer: {
-      pivot: false,
       type: 'integer',
       column: 'accepted_answer_id',
       hidden: false,

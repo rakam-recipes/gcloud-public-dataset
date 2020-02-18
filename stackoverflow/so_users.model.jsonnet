@@ -1,12 +1,11 @@
 {
   name: 'so_users',
-  category: "Stackoverflow",
+  category: 'Stackoverflow',
   hidden: false,
   target: std.mergePatch(std.extVar('schema'), { table: 'users' }),
   mappings: {},
   dimensions: {
     display_name: {
-      pivot: false,
       type: 'string',
       column: 'display_name',
       reportOptions: {
@@ -15,7 +14,6 @@
       hidden: false,
     },
     about_me: {
-      pivot: false,
       type: 'string',
       column: 'about_me',
       reportOptions: {
@@ -24,7 +22,6 @@
       hidden: false,
     },
     age: {
-      pivot: false,
       type: 'string',
       column: 'age',
       reportOptions: {
@@ -33,7 +30,6 @@
       hidden: false,
     },
     creation_date: {
-      pivot: false,
       timeframes: [
         'hour',
         'day',
@@ -55,7 +51,6 @@
       hidden: false,
     },
     last_access_date: {
-      pivot: false,
       timeframes: [
         'hour',
         'day',
@@ -77,7 +72,6 @@
       hidden: false,
     },
     location: {
-      pivot: false,
       type: 'string',
       column: 'location',
       reportOptions: {
@@ -86,7 +80,6 @@
       hidden: false,
     },
     profile_image_url: {
-      pivot: false,
       type: 'string',
       column: 'profile_image_url',
       reportOptions: {
@@ -95,7 +88,6 @@
       hidden: false,
     },
     website_url: {
-      pivot: false,
       type: 'string',
       column: 'website_url',
       reportOptions: {
